@@ -1,0 +1,135 @@
+{
+    "appearance": {
+        "font": {
+            "scale": 0.8
+        },
+        "padding": {
+            "scale": 0.8
+        },
+        "rounding": {
+            "scale": 0.8
+        },
+        "spacing": {
+            "scale": 0.8
+        },
+        "transparency": {
+            "enabled": true
+        }
+    },
+    "bar": {
+        "entries": [
+            {
+                "enabled": true,
+                "id": "logo"
+            },
+            {
+                "enabled": true,
+                "id": "workspaces"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "activeWindow"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "tray"
+            },
+            {
+                "enabled": true,
+                "id": "clock"
+            },
+            {
+                "enabled": true,
+                "id": "statusIcons"
+            },
+            {
+                "enabled": true,
+                "id": "power"
+            }
+        ],
+        "persistent": true,
+        "popouts": {
+            "activeWindow": true,
+            "statusIcons": true,
+            "tray": true
+        },
+        "showOnHover": true,
+        "status": {
+            "showAudio": false,
+            "showBattery": true,
+            "showBluetooth": true,
+            "showKbLayout": false,
+            "showLockStatus": true,
+            "showMicrophone": false,
+            "showNetwork": true,
+            "showWifi": true
+        }
+    },
+    "dashboard": {
+        "showMedia": true,
+        "showWeather": true
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "idle": {
+            "timeouts": [
+                {
+                    "idleAction": "lock",
+                    "timeout": 300
+                }
+            ]
+        }
+    },
+    "paths": {
+        "mediaGif": "/etc/xdg/quickshell/caelestia/assets/bongocat.gif"
+    },
+    "services": {
+        "useFahrenheit": false
+    },
+    "session": {
+        "commands": {
+            "hibernate": [
+                "systemctl",
+                "suspend"
+            ],
+            "logout": [
+                "sh",
+                "-c",
+                "hyprctl dispatch \"hl.dsp.exit()\""
+            ],
+            "reboot": [
+                "systemctl",
+                "reboot"
+            ],
+            "shutdown": [
+                "systemctl",
+                "poweroff"
+            ]
+        },
+        "dragThreshold": 15,
+        "enabled": true,
+        "icons": {
+            "hibernate": "bedtime",
+            "logout": "logout",
+            "reboot": "cached",
+            "shutdown": "power_settings_new"
+        },
+        "vimKeybinds": false
+    },
+    "sidebar": {
+        "dragThreshold": 30,
+        "enabled": true
+    }
+}
