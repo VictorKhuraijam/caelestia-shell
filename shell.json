@@ -87,7 +87,7 @@
             "timeouts": [
                 {
                     "idleAction": "lock",
-                    "timeout": 300
+                    "timeout": 600
                 }
             ]
         }
