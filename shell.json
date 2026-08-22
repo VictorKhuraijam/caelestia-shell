@@ -85,10 +85,7 @@
         },
         "idle": {
             "timeouts": [
-                {
-                    "idleAction": "lock",
-                    "timeout": 600
-                }
+                { "timeout": 600, "idleAction": "lock" }
             ]
         }
     },
@@ -96,6 +93,8 @@
         "mediaGif": "/etc/xdg/quickshell/caelestia/assets/bongocat.gif"
     },
     "services": {
+        "audioIncrement": 0.05,
+        "brightnessIncrement": 0.025,
         "useFahrenheit": false
     },
     "session": {
